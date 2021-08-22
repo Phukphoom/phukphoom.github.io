@@ -1,7 +1,7 @@
-const Button = ({ className, colorScheme = 'gray', onClick = () => {}, children }) => {
+const Button = ({ colorScheme = 'gray', disable = false, onClick = () => {}, children }) => {
     return (
         <button
-            className={`min-w-max px-6 py-3 rounded-lg bg-${colorScheme}-200 hover:bg-${colorScheme}-300 transform duration-300 hover:scale-105 ${className}`}
+            className={`min-w-max px-6 py-3 rounded-lg transform duration-300 bg-${colorScheme}-200 ${!disable ? `hover:bg-${colorScheme}-300  hover:scale-105` : `hidden`} `}
             onClick={onClick}
         >
             {children}
