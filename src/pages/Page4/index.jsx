@@ -1,6 +1,6 @@
 const Page4 = () => {
     return (
-        <div className="w-full text-gray-900" id="page-3">
+        <div className="w-full text-gray-900 break-word" id="page-3">
             <p className="text-4xl">ติดต่อ 📞</p>
             <div class="flex flex-col justify-between w-full">
                 <div>

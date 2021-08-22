@@ -1,6 +1,6 @@
 const Page3 = () => {
     return (
-        <div className="w-full text-gray-900" id="page-3">
+        <div className="w-full text-gray-900 break-normal" id="page-3">
             <p className="text-4xl">My Projects 🔮</p>
             <div class="flex flex-col justify-between w-full">
                 <div>
@@ -29,7 +29,7 @@ const Page3 = () => {
                     <p className="text-xl mt-8">Computer Communication</p>
                     <div className="text-lg ml-8">
                         <li>
-                            <a className="underline hover:text-blue-700" href="https://github.com/Phukphoom/PillPlus_Pharmacy-Frontend">
+                            <a className="underline hover:text-blue-700" href="https://github.com/Phukphoom/ComputerCommunication_FM">
                                 ComputerCommunication_FM (Computer Communication via FM | การติดต่อสื่อสารข้อมูลผ่านคลื่นวิทยุ FM โดย เทคนิค FM Modulation, 4-FSK Modulation)
                             </a>
                         </li>
@@ -58,7 +58,7 @@ const Page3 = () => {
                             </a>
                         </li>
                         <li>
-                            <a className="underline hover:text-blue-700" href="https://github.com/Phukphoom/RoboticArmController_FPGA">
+                            <a className="underline hover:text-blue-700" href="https://github.com/Phukphoom/uRobot-HardwareController">
                                 uRobot-HardwareController (Robot Firmware | C++ สำหรับควบคุมส่วน Hardware ของหุ่นยนต์ uRobot MK-I)
                             </a>
                         </li>
