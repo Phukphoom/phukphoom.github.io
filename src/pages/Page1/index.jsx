@@ -1,6 +1,6 @@
 const Page1 = () => {
     return (
-        <div className="w-full text-gray-900" id="page-1">
+        <div className="w-full text-gray-900 break-word" id="page-1">
             <p className="text-4xl">ยินดีต้อนรับเข้าสู่ Github.io 👀</p>
             <div class="flex flex-col-reverse xl:flex-row justify-between w-full">
                 <div>

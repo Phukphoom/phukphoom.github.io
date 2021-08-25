@@ -4,7 +4,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 import Button from '../Button';
 
-const ContentBox = ({ children }) => {
+const ContentDisplay = ({ children }) => {
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const ContentBox = ({ children }) => {
     return (
         <div className={`flex flex-col justify-between w-full h-full`}>
             <div className="flex w-full h-full p-8 bg-gray-300 rounded-lg animate-wiggle-move">
-                <div className="w-full h-full" id={`content-${index}`}>
+                <div className="w-full h-full animate-fade-in" id={`content-${index}`}>
                     {children[index]}
                 </div>
             </div>
@@ -27,6 +27,7 @@ const ContentBox = ({ children }) => {
                         if (index > 0) {
                             let element = document.getElementById(`content-${index}`);
                             element.classList.remove('animate-fade-in');
+
                             setIndex(index - 1);
                         }
                     }}
@@ -40,6 +41,7 @@ const ContentBox = ({ children }) => {
                         if (index < children.length - 1) {
                             let element = document.getElementById(`content-${index}`);
                             element.classList.remove('animate-fade-in');
+
                             setIndex(index + 1);
                         }
                     }}
@@ -50,4 +52,4 @@ const ContentBox = ({ children }) => {
         </div>
     );
 };
-export default ContentBox;
+export default ContentDisplay;
