@@ -9,7 +9,7 @@ const Page4 = () => {
                 </div>
                 <div>
                     <p className="text-xl mt-8">📱 Mobile </p>
-                    <p className="text-lg ml-8">09X-XXX-XXXX</p>
+                    <p className="text-lg ml-8">093-142-5175</p>
                 </div>
                 <div>
                     <p className="text-xl mt-8">🌐 Github </p>
